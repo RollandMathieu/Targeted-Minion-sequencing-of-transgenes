@@ -1,10 +1,13 @@
 # Targeted-Minion-sequencing-of-transgenes
 This pipeline allows de novo assembly of sequences flanking an amplified sequence according to the technique described in Boutigny et al. "Targeted Minion sequencing of transgenes".
+
 It works only with MacOS/Linux.
 
 ### Installing
 Installation needs 
+
 conda https://docs.conda.io/en/latest/miniconda.html. Download python version 3.7 
+
 blast ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.8.1/ for Mac and Linux sudo apt-get install ncbi-blast+
 ```
 Conda create -n medaka -c bioconda -c conda-forge medaka 
@@ -12,7 +15,8 @@ pip install biopython
 git clone https://github.com/RollandMathieu/Targeted-Minion-sequencing-of-transgenes
 cd Targeted-Minion-sequencing-of-transgenes 
 ```
-Version linux : chmod ugo+x shasta-Linux-0.1.0 
+Version linux : chmod ugo+x shasta-Linux-0.1.0
+
 Version Mac : chmod ugo+x shasta-macOS-0.1.0
 
 ### How to run the different scripts
@@ -42,3 +46,6 @@ conda activate medaka
 medaka_consensus -i path_to_the_reads -d path_to_the_draft -o result_folder
 ```
 The file consensus.fasta corresponds to the final result the expected quality is around Q30
+
+### Authors
+**Florent Fioriti** - *Initial work*
