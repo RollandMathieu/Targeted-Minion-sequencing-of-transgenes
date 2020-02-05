@@ -19,7 +19,7 @@ Version linux : chmod ugo+x shasta-Linux-0.1.0
 
 Version Mac : chmod ugo+x shasta-macOS-0.1.0
 
-### How to run the different scripts
+### Running
 ```
 python3 shasta_run.py -len minimum_size_of_the_sequence -reads folder_containing_the_fastq_files -out result_folder -amorce file_containing_the_primers
 ```
